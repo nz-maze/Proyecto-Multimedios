@@ -28,7 +28,7 @@
 
             <div class="form__btnlist">
                 <asp:Button class="form__submit" Text="Register" ID="btnRegister" runat="server" OnClick="btnRegister_Click"/>
-                <asp:Button class="form__submit" Text="Update" ID="btnUpdate" runat="server" />
+                <asp:Button class="form__submit" Text="Update" ID="btnUpdate" runat="server" OnClick="btnUpdate_Click"/>
                 <asp:Button class="form__submit" Text="Delete" ID="btnDelete" runat="server" />
                 <asp:Button class="form__submit" Text="Consult" ID="btnConsult" runat="server" />
 
