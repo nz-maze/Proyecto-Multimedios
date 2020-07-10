@@ -1,0 +1,5 @@
+D:\PC-USER-TH021V\Escritorio\SuperMercadoOnline\SuperMercadoOnline\SuperMercadoOnline_V-1.0\SuperMercadoOnline\DataLogic\bin\Debug\DataLogic.dll
+D:\PC-USER-TH021V\Escritorio\SuperMercadoOnline\SuperMercadoOnline\SuperMercadoOnline_V-1.0\SuperMercadoOnline\DataLogic\bin\Debug\DataLogic.pdb
+D:\PC-USER-TH021V\Escritorio\SuperMercadoOnline\SuperMercadoOnline\SuperMercadoOnline_V-1.0\SuperMercadoOnline\DataLogic\obj\Debug\DataLogic.csproj.CoreCompileInputs.cache
+D:\PC-USER-TH021V\Escritorio\SuperMercadoOnline\SuperMercadoOnline\SuperMercadoOnline_V-1.0\SuperMercadoOnline\DataLogic\obj\Debug\DataLogic.dll
+D:\PC-USER-TH021V\Escritorio\SuperMercadoOnline\SuperMercadoOnline\SuperMercadoOnline_V-1.0\SuperMercadoOnline\DataLogic\obj\Debug\DataLogic.pdb

@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SuperMercadoOnline.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="www/css/main.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Car</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <form class="all_body" id="form1" runat="server">
+
+        
+
+
+
+
+
+
+
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+    </form>
+     
+        <footer>
+            <section class="footer_box">
+                <article class="footer">
+                    <h2 class="footer__title">About us</h2>
+                    <div class="footer_info">
+                        <p class="footer_info__parr">
+                            We are a supermarket that has spent years in 
+                            the business of sales, deliveries of newspapers and products to the 
+                            comfort of your home, it is an honor for us to be of 
+                            use always and more now with the current appointment for which the country is studying..
+                        </p>
+                        <div class="footer_info__social">
+                            <a class="footer_info__link" href="#"><span class="footer_info__red fab fa-facebook-f"></span></a>
+                            <a class="footer_info__link" href="#"><span class="footer_info__red fab fa-twitter"></span></a>
+                            <a class="footer_info__link" href="#"><span class="footer_info__red fab fa-instagram"></span></a>
+                            <a class="footer_info__link" href="#"><span class="footer_info__red fab fa-youtube"></span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="footer">
+                    <h2 class="footer__title">Address</h2>
+                    <div class="footer_info">
+                        <div class="footer_info__place">
+                            <span class=" footer_info__icon fas fa-map-marker-alt"></span>
+                            <span class="footer_info__text">Puntarenas, Centro</span>
+                        </div>
+                        <div class="footer_info__phone">
+                            <span class="footer_info__icon fas fa-phone-alt"></span>
+                            <span class="footer_info__text">+089-67676-323</span>
+                        </div>
+                        <div class="footer_info__email">
+                            <span class="footer_info__icon fas fa-envelope"></span>
+                            <span class="footer_info__text">supermarket@example.com</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </footer>
+</body>
+</html>

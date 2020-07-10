@@ -1,0 +1,114 @@
+﻿
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.titulo {
+    font-family: Roboto,'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    //background: linear-gradient(to right, #2e75ab, #6f827c,#f5e8d7 );
+}
+
+.datosContacto {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 80px;
+
+    &__titulo {
+        width: 100%;
+    }
+
+    &__formulario {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.formulario {
+
+    &__datos {
+        width: 100%;
+        margin: 15px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        &__titulo {
+            text-align: left;
+            width: 20%;
+        }
+
+        &__dato {
+            width: 60%;
+
+
+            &:hover {
+                cursor: pointer;
+                border: 2px solid black;
+                transition: 0.0s;
+                transform: translate(5px,2px);
+                border-radius: 5px;
+            }
+
+            &:focus {
+                background: #f5e8d7;
+            }
+        }
+
+        &__enviar {
+            background: salmon;
+            padding: 4px 14px;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+            border: none;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &__otrosDatos {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.datosUbicacion {
+    width: 50vw;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 80px;
+
+    &__titulo {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    &__mapa {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
