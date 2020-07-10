@@ -11,7 +11,7 @@ namespace SuperMercadoOnline
 {
     public partial class FRMUserRegistration : System.Web.UI.Page
     {
-        private string strCode;
+        //private string strCode;
         private marketsaveusEntities entidades;
         
         private void tipoUsuario(Boolean aux)
@@ -43,8 +43,6 @@ namespace SuperMercadoOnline
                 this.entidades.TblUser.FirstOrDefault(u => u.email == pcode);
             if (tblUser == null)
             {
-
-
                 TblUser table = new TblUser();
 
                 table.email = this.txtEmail.Text;
@@ -75,6 +73,37 @@ namespace SuperMercadoOnline
             else
             {
                 lbNotificaciones.Text = "The entered user is already registered";
+            }
+        }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            this.entidades = new marketsaveusEntities();
+
+
+            TblUser table = this.entidades.TblUser.FirstOrDefault(u => u.email == this.txtEmail.Text);
+
+            if (table != null)
+            {
+                table.passw = this.txtPassword.Text;
+                table.fullName = this.txtName.Text;
+                char tipo;
+                if (this.DropDownListTipe.Text.Equals("Administrador"))
+                {
+                    tipo = 'a';
+                }
+                else
+                {
+                    tipo = 'c';
+                }
+                table.tipo = tipo + "";
+
+                this.entidades.SaveChanges();
+                Response.Redirect("About.aspx");
+            }
+            else
+            {
+                lbNotificaciones.Text = "The entered user is not registered";
             }
         }
     }
